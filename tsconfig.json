@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "types": ["styled-components-react-native"],
+    "typeRoots": ["./src/types/env.d.ts"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
