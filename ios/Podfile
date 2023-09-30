@@ -22,7 +22,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'Blank' do
+target 'Kings' do
   use_expo_modules!
   post_integrate do |installer|
     begin
@@ -53,7 +53,7 @@ target 'Blank' do
   )
   pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text', :modular_headers => true
 
-  target 'BlankTests' do
+  target 'KingsTests' do
     inherit! :complete
     # Pods for testing
   end

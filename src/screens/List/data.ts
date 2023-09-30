@@ -4,7 +4,14 @@ const data = [
     title: 'Lamborghini',
     subtitle: 'Aventador S Roadster',
     price: '5 500 AED',
-    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    brand: 'lambo',
+    preview:
+      'https://static.tildacdn.com/tild6231-6635-4262-a566-633663356366/2gelikkvadrat.jpg',
+    images: [
+      'https://static.tildacdn.com/tild6231-6635-4262-a566-633663356366/2gelikkvadrat.jpg',
+      'https://static.tildacdn.com/tild6231-6635-4262-a566-633663356366/2gelikkvadrat.jpg',
+      'https://static.tildacdn.com/tild6231-6635-4262-a566-633663356366/2gelikkvadrat.jpg',
+    ],
     tags: ['cabrio', 'sportscar', 'lambo'],
     specifications: {
       engine: 'Petrol',
@@ -20,7 +27,12 @@ const data = [
     title: 'Lamborghini 2',
     subtitle: 'Aventador S Roadster',
     price: '5 500 AED',
-    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    preview: 'https://fakeimg.pl/600x400',
+    images: [
+      'https://fakeimg.pl/600x400',
+      'https://fakeimg.pl/600x400',
+      'https://fakeimg.pl/600x400',
+    ],
     tags: ['cabrio', 'sportscar', 'lambo'],
     specifications: {
       engine: 'Petrol',
@@ -36,7 +48,12 @@ const data = [
     title: 'Lamborghini 3',
     subtitle: 'Aventador S Roadster',
     price: '5 500 AED',
-    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    preview: 'https://fakeimg.pl/600x400',
+    images: [
+      'https://fakeimg.pl/600x400',
+      'https://fakeimg.pl/600x400',
+      'https://fakeimg.pl/600x400',
+    ],
     tags: ['cabrio', 'sportscar', 'lambo'],
     specifications: {
       engine: 'Petrol',
@@ -52,7 +69,12 @@ const data = [
     title: 'Lamborghini',
     subtitle: 'Aventador S Roadster',
     price: '5 500 AED',
-    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    preview: 'https://fakeimg.pl/600x400',
+    images: [
+      'https://fakeimg.pl/600x400',
+      'https://fakeimg.pl/600x400',
+      'https://fakeimg.pl/600x400',
+    ],
     tags: ['cabrio', 'sportscar', 'lambo'],
     specifications: {
       engine: 'Petrol',

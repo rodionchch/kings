@@ -14,15 +14,19 @@ const Open = () => {
     dispatch(setSaved(item));
   };
 
-  console.log('route=====>', params);
-
   return (
     <s.Open>
       <s.OpenHeader>
-        <s.OpenMainImage />
+        <s.OpenMainImage source={{uri: params?.images?.[0]}} />
         <s.OpenImages>
-          <s.OpenImage />
-          <s.OpenImage second />
+          {params?.images
+            ?.filter((el, index) => index !== 0)
+            ?.map((el, index) => (
+              <s.OpenImage
+                source={{uri: el}}
+                second={index === params?.images?.length - 2}
+              />
+            ))}
         </s.OpenImages>
         <s.OpenHeaderInner>
           <s.OpenLogo />
@@ -43,12 +47,12 @@ const Open = () => {
       </s.OpenHeader>
       <s.OpenTags>#cabrio #sportscar #lambo</s.OpenTags>
       <s.OpenDescription>
-        Engine: Petrol {'\n'}
-        Engine volume: 6498 cc {'\n'}
-        Max. speed: 320 km/h {'\n'}
-        Transmission: Robotic 7 {'\n'}
-        0–100 km/h: 3 seconds {'\n'}
-        Power: 700 HP
+        Engine: {params?.specifications?.engine} {'\n'}
+        Engine volume: {params?.specifications?.engineVolume} {'\n'}
+        Max. speed: {params?.specifications?.maxSpeed} {'\n'}
+        Transmission: {params?.specifications?.transmission} {'\n'}
+        0–100 km/h: {params?.specifications?.zeroToHundred} {'\n'}
+        Power: {params?.specifications?.power}
       </s.OpenDescription>
       <s.OpenPrice>
         <s.OpenPriceIcon />

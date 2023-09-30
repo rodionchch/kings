@@ -1,5 +1,5 @@
 {
-  "name": "Blank",
+  "name": "Kings",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,8 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "apk": "(cd android && ./gradlew clean && ./gradlew app:assembleRelease && mv app/build/outputs/apk/release/app-release.apk ../Blank\\ `date +'%Y.%m.%d'`.apk)",
-    "build": "(cd android && ./gradlew clean && ./gradlew bundleRelease && mv app/build/outputs/bundle/release/app-release.aab ../Blank\\ `date +'%Y.%m.%d'`.aab)"
+    "apk": "(cd android && ./gradlew clean && ./gradlew app:assembleRelease && mv app/build/outputs/apk/release/app-release.apk ../Kings\\ `date +'%Y.%m.%d'`.apk)",
+    "build": "(cd android && ./gradlew clean && ./gradlew bundleRelease && mv app/build/outputs/bundle/release/app-release.aab ../Kings\\ `date +'%Y.%m.%d'`.aab)"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^4",

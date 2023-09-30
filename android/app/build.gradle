@@ -101,9 +101,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.blank"
+    namespace "com.kings"
     defaultConfig {
-        applicationId "com.blank"
+        applicationId "com.kings"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

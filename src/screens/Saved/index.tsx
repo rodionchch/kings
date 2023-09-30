@@ -3,13 +3,14 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import {setSaved} from 'store/appSlice';
 import {useAppDispatch, useAppSelector} from 'store/hooks';
 
-import data from './data';
+// import data from './data';
 import * as s from './styles';
 import routes from 'constants/routes';
 
-const List = () => {
+const Saved = () => {
   const dispatch = useAppDispatch();
   const {saved} = useAppSelector(({app}) => app);
+  const route = useRoute();
   const {navigate} = useNavigation();
 
   const onSave = item => {
@@ -18,47 +19,50 @@ const List = () => {
 
   return (
     <>
-      <s.List
-        data={data}
+      <s.Saved
+        data={saved}
         renderItem={({item, index}) => {
           return (
             <>
-              <s.ListItem
+              <s.SavedItem
                 onPress={() => {
                   navigate(routes.Open, {
                     ...item,
                   });
                 }}>
-                <s.ListItemImage source={{uri: item?.preview}} />
-                <s.ListItemContent>
-                  <s.ListItemTitle>{item?.title}</s.ListItemTitle>
-                  <s.ListItemSubTitle>{item?.subtitle}</s.ListItemSubTitle>
-                  <s.ListItemPrice>
-                    <s.ListItemPriceIcon />
-                    <s.ListItemPriceText>5500 AED</s.ListItemPriceText>
-                  </s.ListItemPrice>
+                <s.SavedItemImage source={{uri: item?.images?.[0]}} />
+                <s.SavedItemWrapper>
+                  <s.SavedItemContent>
+                    <s.SavedItemTitle>{item?.title}</s.SavedItemTitle>
+                    <s.SavedItemSubTitle>{item?.subtitle}</s.SavedItemSubTitle>
+                    <s.SavedItemPrice>
+                      <s.SavedItemPriceIcon />
+                      <s.SavedItemPriceText>5500 AED</s.SavedItemPriceText>
+                    </s.SavedItemPrice>
 
-                  <s.ListItemTags>#cabrio #sportscar #lambo</s.ListItemTags>
+                    <s.SavedItemTags>#cabrio #sportscar #lambo</s.SavedItemTags>
+                  </s.SavedItemContent>
 
-                  <s.ListItemSave
+                  <s.SavedItemSave
                     onPress={() => {
                       onSave(item);
                     }}>
-                    <s.ListItemSaveIcon
+                    <s.SavedItemSaveIcon
                       active={saved.find(el => el.id === item.id)}
                     />
-                  </s.ListItemSave>
-                </s.ListItemContent>
-              </s.ListItem>
-              {index === data?.length - 1 && <s.Plug />}
+                  </s.SavedItemSave>
+                </s.SavedItemWrapper>
+              </s.SavedItem>
+              {index === saved?.length - 1 && <s.Plug />}
             </>
           );
         }}
         keyExtractor={item => item.id}
       />
+
       <s.BottomNavigationGradient />
     </>
   );
 };
 
-export default List;
+export default Saved;
