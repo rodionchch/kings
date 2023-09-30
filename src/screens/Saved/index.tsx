@@ -1,16 +1,14 @@
 import React from 'react';
-import {useNavigation, useRoute} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import {setSaved} from 'store/appSlice';
 import {useAppDispatch, useAppSelector} from 'store/hooks';
 
-// import data from './data';
 import * as s from './styles';
 import routes from 'constants/routes';
 
 const Saved = () => {
   const dispatch = useAppDispatch();
   const {saved} = useAppSelector(({app}) => app);
-  const route = useRoute();
   const {navigate} = useNavigation();
 
   const onSave = item => {

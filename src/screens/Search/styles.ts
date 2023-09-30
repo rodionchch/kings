@@ -28,7 +28,6 @@ export const SearchInput = styled.TextInput.attrs({
 export const SearchList = styled.ScrollView`
   padding-top: 44px;
   margin-bottom: 60px;
-  ,
 `;
 
 export const SearchListItem = styled.TouchableOpacity`
@@ -128,7 +127,6 @@ export const SearchListItemTitle = styled.Text`
   color: #676767;
   font-size: 14px;
   font-weight: 300;
-  line-height: normal;
 `;
 
 export const BottomNavigationGradient = styled(LinearGradient).attrs({

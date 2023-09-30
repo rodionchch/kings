@@ -13,6 +13,8 @@ import {getAppBar} from 'components/AppBar';
 import Login from 'screens/Login';
 import Dashboard from 'screens/Dashboard';
 import Open from 'screens/Open';
+import Order from 'screens/Order';
+import Done from 'screens/Done';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +48,8 @@ const Home: React.FC<HomeProps> = ({theme}) => {
               component={Open}
               options={{title: 'Kings'}}
             />
+            <Stack.Screen name={routes.Order} component={Order} />
+            <Stack.Screen name={routes.Done} component={Done} />
           </>
         )}
       </Stack.Navigator>

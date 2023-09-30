@@ -29,7 +29,9 @@ const List = () => {
                     ...item,
                   });
                 }}>
-                <s.ListItemImage source={{uri: item?.preview}} />
+                <s.ListItemImage
+                  source={item?.preview ? {uri: item?.preview} : undefined}
+                />
                 <s.ListItemContent>
                   <s.ListItemTitle>{item?.title}</s.ListItemTitle>
                   <s.ListItemSubTitle>{item?.subtitle}</s.ListItemSubTitle>

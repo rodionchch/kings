@@ -24,5 +24,7 @@ const routes = {
   Language: 'Language',
   About: 'About',
   Open: 'Open',
+  Order: 'Order',
+  Done: 'Done',
 };
 export default routes;

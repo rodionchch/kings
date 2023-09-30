@@ -1,14 +1,16 @@
 import React from 'react';
-import {useRoute} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import {useAppDispatch, useAppSelector} from 'store/hooks';
 import {setSaved} from 'store/appSlice';
 
 import * as s from './styles';
+import routes from 'constants/routes';
 
 const Open = () => {
   const dispatch = useAppDispatch();
   const {saved} = useAppSelector(({app}) => app);
   const {params} = useRoute();
+  const {navigate} = useNavigation();
 
   const onSave = item => {
     dispatch(setSaved(item));
@@ -59,7 +61,12 @@ const Open = () => {
         <s.OpenPriceText>{params?.price}</s.OpenPriceText>
       </s.OpenPrice>
 
-      <s.OpenButton onPress={() => {}}>Book now</s.OpenButton>
+      <s.OpenButton
+        onPress={() => {
+          navigate(routes.Order);
+        }}>
+        Book now
+      </s.OpenButton>
     </s.Open>
   );
 };
