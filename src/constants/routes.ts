@@ -23,5 +23,6 @@ const routes = {
   Theme: 'Theme',
   Language: 'Language',
   About: 'About',
+  Open: 'Open',
 };
 export default routes;

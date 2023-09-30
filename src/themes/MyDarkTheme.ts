@@ -9,7 +9,7 @@ const MyDarkTheme = {
     onPrimaryContainer: '#181D20', // Fab Label
     secondary: 'rgb(176, 204, 203)',
     onSecondary: 'rgb(27, 53, 52)',
-    secondaryContainer: '#81E5C3', // Активный Nav - Дата в чате
+    secondaryContainer: 'transparent', // Активный Nav - Дата в чате
     onSecondaryContainer: '#181D20', // Активная иконка
     tertiary: 'rgb(179, 200, 232)',
     onTertiary: 'rgb(28, 49, 75)',

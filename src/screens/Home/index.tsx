@@ -12,11 +12,7 @@ import {getAppBar} from 'components/AppBar';
 
 import Login from 'screens/Login';
 import Dashboard from 'screens/Dashboard';
-import Profile from 'screens/Settings/Profile';
-import Security from 'screens/Settings/Security';
-import Theme from 'screens/Settings/Theme';
-import Language from 'screens/Settings/Language';
-import About from 'screens/Settings/About';
+import Open from 'screens/Open';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,30 +29,25 @@ const Home: React.FC<HomeProps> = ({theme}) => {
         screenOptions={{
           header: getAppBar,
         }}>
-        {/* {!auth ? (
+        {!auth ? (
           <>
             <Stack.Screen name={routes.Login} component={Login} />
           </>
-        ) : ( */}
-        <>
-          <Stack.Screen
-            name={routes.Dashboard}
-            component={Dashboard}
-            options={{animation: 'none'}}
-            initialParams={{dashboard: 'Mail'}}
-          />
-
-          {/**
-           * Settings
-           */}
-
-          {/* <Stack.Screen name={routes.Profile} component={Profile} />
-            <Stack.Screen name={routes.Security} component={Security} />
-            <Stack.Screen name={routes.Theme} component={Theme} />
-            <Stack.Screen name={routes.Language} component={Language} />
-            <Stack.Screen name={routes.About} component={About} /> */}
-        </>
-        {/* )} */}
+        ) : (
+          <>
+            <Stack.Screen
+              name={routes.Dashboard}
+              component={Dashboard}
+              options={{animation: 'none'}}
+              initialParams={{dashboard: 'Kings'}}
+            />
+            <Stack.Screen
+              name={routes.Open}
+              component={Open}
+              options={{title: 'Kings'}}
+            />
+          </>
+        )}
       </Stack.Navigator>
     </NavigationContainer>
   );

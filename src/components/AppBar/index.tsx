@@ -1,5 +1,9 @@
 import React from 'react';
-import {Appbar as PaperAppbar} from 'react-native-paper';
+import {
+  Appbar as PaperAppbar,
+  Text as PaperText,
+  Text,
+} from 'react-native-paper';
 import {getHeaderTitle} from '@react-navigation/elements';
 import {BottomTabHeaderProps} from '@react-navigation/bottom-tabs';
 import {NativeStackHeaderProps} from '@react-navigation/native-stack';
@@ -32,9 +36,12 @@ const AppBar = ({
   return (
     <>
       <PaperAppbar.Header mode="center-aligned">
-        {back && <PaperAppbar.BackAction onPress={navigation.goBack} />}
+        <PaperText style={{fontWeight: 800, fontSize: 24, paddingLeft: 12}}>
+          {getTitle()?.toUpperCase()}
+        </PaperText>
+        {/* {back && <PaperAppbar.BackAction onPress={navigation.goBack} />} */}
 
-        <PaperAppbar.Content title={getTitle()} />
+        {/* <PaperAppbar.Content title={getTitle()} /> */}
       </PaperAppbar.Header>
     </>
   );

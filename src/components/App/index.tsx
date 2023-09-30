@@ -7,12 +7,9 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {ThemeProp} from 'react-native-paper/lib/typescript/types';
 
 import {store} from 'store';
-import {API_URL, DEBUG} from '@env';
 
 import useApp from './useApp';
 import Home from 'screens/Home';
-
-console.info('App Running ==>', API_URL, 'Debug:', DEBUG);
 
 export const PreferencesContext = createContext({
   setTheme: (theme: string | null) => theme,

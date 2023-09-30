@@ -1,0 +1,68 @@
+const data = [
+  {
+    id: 1,
+    title: 'Lamborghini',
+    subtitle: 'Aventador S Roadster',
+    price: '5 500 AED',
+    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    tags: ['cabrio', 'sportscar', 'lambo'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '6498 cc',
+      maxSpeed: '320 km/h',
+      transmission: 'Robotic 7',
+      zeroToHundred: '3 seconds',
+      power: '700 HP',
+    },
+  },
+  {
+    id: 2,
+    title: 'Lamborghini 2',
+    subtitle: 'Aventador S Roadster',
+    price: '5 500 AED',
+    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    tags: ['cabrio', 'sportscar', 'lambo'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '6498 cc',
+      maxSpeed: '320 km/h',
+      transmission: 'Robotic 7',
+      zeroToHundred: '3 seconds',
+      power: '700 HP',
+    },
+  },
+  {
+    id: 3,
+    title: 'Lamborghini 3',
+    subtitle: 'Aventador S Roadster',
+    price: '5 500 AED',
+    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    tags: ['cabrio', 'sportscar', 'lambo'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '6498 cc',
+      maxSpeed: '320 km/h',
+      transmission: 'Robotic 7',
+      zeroToHundred: '3 seconds',
+      power: '700 HP',
+    },
+  },
+  {
+    id: 4,
+    title: 'Lamborghini',
+    subtitle: 'Aventador S Roadster',
+    price: '5 500 AED',
+    images: ['url/img.jpg', 'url/img2.jpg', 'url/img3.jpg'],
+    tags: ['cabrio', 'sportscar', 'lambo'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '6498 cc',
+      maxSpeed: '320 km/h',
+      transmission: 'Robotic 7',
+      zeroToHundred: '3 seconds',
+      power: '700 HP',
+    },
+  },
+];
+
+export default data;

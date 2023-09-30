@@ -1,14 +1,14 @@
 import React from 'react';
 
-import LoginAuth from './LoginAuth';
 import useLogin from './useLogin';
+import {Text} from 'react-native-paper';
 
 import * as s from './styles';
 
 const Login = () => {
   const {} = useLogin();
 
-  return <LoginAuth />;
+  return <Text>Login</Text>;
 };
 
 export default Login;
