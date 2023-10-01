@@ -37,10 +37,10 @@ const List = () => {
                   <s.ListItemSubTitle>{item?.subtitle}</s.ListItemSubTitle>
                   <s.ListItemPrice>
                     <s.ListItemPriceIcon />
-                    <s.ListItemPriceText>5500 AED</s.ListItemPriceText>
+                    <s.ListItemPriceText>{item?.price}</s.ListItemPriceText>
                   </s.ListItemPrice>
 
-                  <s.ListItemTags>#cabrio #sportscar #lambo</s.ListItemTags>
+                  <s.ListItemTags>#{item?.tags?.join(' #')}</s.ListItemTags>
 
                   <s.ListItemSave
                     onPress={() => {

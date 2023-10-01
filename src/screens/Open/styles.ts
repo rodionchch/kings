@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {Button} from 'react-native-paper';
 import {ScrollView} from 'react-native-gesture-handler';
 
 import heart from 'assets/icons/heart.png';
@@ -6,7 +7,15 @@ import price from 'assets/icons/price.png';
 import heartActive from 'assets/icons/heart-active.png';
 
 import lamborghini from 'assets/logos/lamborghini.png';
-import {Button} from 'react-native-paper';
+import rr from 'assets/logos/rr.png';
+import mclaren from 'assets/logos/mclaren.png';
+import porshe from 'assets/logos/porshe.png';
+import mers from 'assets/logos/mers.png';
+import bmw from 'assets/logos/bmw.png';
+import loadrover from 'assets/logos/loadrover.png';
+import audi from 'assets/logos/audi.png';
+import ferrari from 'assets/logos/ferrari.png';
+import chevrolet from 'assets/logos/chevrolet.png';
 
 export const Open = styled(ScrollView)`
   padding: 0 12px;
@@ -45,12 +54,117 @@ export const OpenHeaderInner = styled.View`
   align-items: center;
 `;
 
-export const OpenLogo = styled.Image.attrs({
-  source: lamborghini,
+export const OpenLogo = styled.Image.attrs(({brand}) => {
+  obj = {
+    source: null,
+  };
+
+  if (brand === 'rr') {
+    obj.source = rr;
+  }
+
+  if (brand === 'mclaren') {
+    obj.source = mclaren;
+  }
+
+  if (brand === 'lamborghini') {
+    obj.source = lamborghini;
+  }
+
+  if (brand === 'porshe') {
+    obj.source = porshe;
+  }
+
+  if (brand === 'mers') {
+    obj.source = mers;
+  }
+
+  if (brand === 'bmw') {
+    obj.source = bmw;
+  }
+
+  if (brand === 'loadrover') {
+    obj.source = loadrover;
+  }
+
+  if (brand === 'audi') {
+    obj.source = audi;
+  }
+
+  if (brand === 'ferrari') {
+    obj.source = ferrari;
+  }
+
+  if (brand === 'chevrolet') {
+    obj.source = chevrolet;
+  }
+
+  return obj;
 })`
   width: 40px;
   height: 46px;
   margin-right: 16px;
+
+  ${props =>
+    props.brand === 'rr' &&
+    `
+    width: 36px;
+    height: 59px
+  `}
+  ${props =>
+    props.brand === 'audi' &&
+    `
+    width: 48px;
+    height: 29px
+  `}
+  ${props =>
+    props.brand === 'bmw' &&
+    `
+    width: 45px;
+    height: 45px
+  `}
+  ${props =>
+    props.brand === 'lamborghini' &&
+    `
+    width: 41px;
+    height: 47px
+  `}
+  ${props =>
+    props.brand === 'loadrover' &&
+    `
+    width: 54px;
+    height: 28px
+  `}
+  ${props =>
+    props.brand === 'mclaren' &&
+    `
+    width: 76px;
+    height: 10px
+  `}
+  ${props =>
+    props.brand === 'mers' &&
+    `
+    width: 47px;
+    height: 47px
+  `}
+  ${props =>
+    props.brand === 'porshe' &&
+    `
+    width: 36px;
+    height: 47px
+  `}
+  ${props =>
+    props.brand === 'ferrari' &&
+    `
+    width: 30px;
+    height: 46px
+  `}
+  ${props =>
+    props.brand === 'chevrolet' &&
+    `
+    width: 55px;
+    height: 24px
+  `}
 `;
 
 export const OpenHeaderTitleWrapper = styled.View`

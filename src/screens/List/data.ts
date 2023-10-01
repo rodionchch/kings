@@ -384,7 +384,7 @@ const data = [
   },
 
   {
-    id: 16,
+    id: 17,
     title: 'BMW',
     subtitle: 'X6 M Competition',
     price: '1 400 AED',
@@ -408,7 +408,7 @@ const data = [
   },
 
   {
-    id: 17,
+    id: 18,
     title: 'BMW',
     subtitle: 'X7',
     price: '1 300 AED',

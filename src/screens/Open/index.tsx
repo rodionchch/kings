@@ -31,7 +31,7 @@ const Open = () => {
             ))}
         </s.OpenImages>
         <s.OpenHeaderInner>
-          <s.OpenLogo />
+          <s.OpenLogo brand={params?.brand} />
           <s.OpenHeaderTitleWrapper>
             <s.OpenHeaderTitle>{params?.title}</s.OpenHeaderTitle>
             <s.OpenHeaderTitleSubtitle>
@@ -47,7 +47,7 @@ const Open = () => {
           </s.OpenSave>
         </s.OpenHeaderInner>
       </s.OpenHeader>
-      <s.OpenTags>#cabrio #sportscar #lambo</s.OpenTags>
+      <s.OpenTags>#{params?.tags?.join(' #')}</s.OpenTags>
       <s.OpenDescription>
         Engine: {params?.specifications?.engine} {'\n'}
         Engine volume: {params?.specifications?.engineVolume} {'\n'}

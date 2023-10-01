@@ -35,10 +35,10 @@ const Saved = () => {
                     <s.SavedItemSubTitle>{item?.subtitle}</s.SavedItemSubTitle>
                     <s.SavedItemPrice>
                       <s.SavedItemPriceIcon />
-                      <s.SavedItemPriceText>5500 AED</s.SavedItemPriceText>
+                      <s.SavedItemPriceText>{item?.price}</s.SavedItemPriceText>
                     </s.SavedItemPrice>
 
-                    <s.SavedItemTags>#cabrio #sportscar #lambo</s.SavedItemTags>
+                    <s.SavedItemTags>#{item?.tags?.join(' #')}</s.SavedItemTags>
                   </s.SavedItemContent>
 
                   <s.SavedItemSave
