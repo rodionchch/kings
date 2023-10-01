@@ -94,6 +94,7 @@ const data = [
       power: '600 HP',
     },
   },
+
   {
     id: 5,
     title: 'Porsche',
@@ -163,6 +164,270 @@ const data = [
       transmission: 'Robotic',
       zeroToHundred: '2.9 seconds',
       power: '720 HP',
+    },
+  },
+
+  {
+    id: 8,
+    title: 'Mercedes-Benz',
+    subtitle: 'G63',
+    price: '2 210 AED',
+    brand: 'mers',
+    preview:
+      'https://thumb.tildacdn.com/tild3035-6162-4338-b034-326335643034/-/resize/320x/-/format/webp/gelikkvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild6133-6339-4538-b466-316363393465/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild3661-3634-4162-b539-313338613837/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6330-3330-4662-b661-376131626230/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+    ],
+    tags: ['suv', 'luxury', 'mercedes'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '3982 cc',
+      maxSpeed: '220 km/h',
+      transmission: 'Automatic 9',
+      zeroToHundred: '4.5 seconds',
+      power: '585 HP',
+    },
+  },
+
+  {
+    id: 9,
+    title: 'Mercedes-Benz',
+    subtitle: 'GLS450',
+    price: '1 000 AED',
+    brand: 'mers',
+    preview:
+      'https://thumb.tildacdn.com/tild3034-3530-4338-a130-306132386630/-/resize/320x/-/format/webp/glskvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3466-3038-4732-a461-323330303837/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6530-3733-4232-b661-613330616236/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6163-3138-4436-b934-623639653565/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+    ],
+    tags: ['suv', 'luxury', 'mercedes'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '2999 cc',
+      maxSpeed: '246 km/h',
+      transmission: 'Automatic 9',
+      zeroToHundred: '6.2 seconds',
+      power: '367 HP',
+    },
+  },
+
+  {
+    id: 10,
+    title: 'Porsche',
+    subtitle: '911 TurboS',
+    price: '2 900 AED',
+    brand: 'porshe',
+    preview:
+      'https://thumb.tildacdn.com/tild3435-3533-4565-b564-306334653535/-/resize/320x/-/format/webp/kvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3338-3233-4231-b730-643430333834/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild3961-3139-4232-a231-393865636561/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6563-6635-4834-a337-313832316631/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+    ],
+    tags: ['coupe', 'sportscar', 'porsche'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '3800 cc',
+      maxSpeed: '320 km/h',
+      transmission: 'Manual 7',
+      zeroToHundred: '2.7 seconds',
+      power: '650 HP',
+    },
+  },
+
+  {
+    id: 11,
+    title: 'Lamborghini',
+    subtitle: 'Aventador S Roadster',
+    price: '5 500 AED',
+    brand: 'lamborghini',
+    preview:
+      'https://thumb.tildacdn.com/tild3266-3232-4234-b236-643763333465/-/resize/320x/-/format/webp/lambokvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild6132-3135-4030-b264-646533366335/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6630-3130-4335-b236-303530636438/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild3539-3938-4961-b830-353835616633/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+    ],
+    tags: ['cabrio', 'sportscar', 'lambo'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '6498 cc',
+      maxSpeed: '320 km/h',
+      transmission: 'Robotic 7',
+      zeroToHundred: '3 seconds',
+      power: '700 HP',
+    },
+  },
+
+  {
+    id: 12,
+    title: 'Mercedes-Benz',
+    subtitle: 'Maybach',
+    price: '2 155 AED',
+    brand: 'mers',
+    preview:
+      'https://thumb.tildacdn.com/tild6339-3963-4438-b764-343834366162/-/resize/320x/-/format/webp/maybachkvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild6637-3233-4134-b032-373662613130/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6361-6463-4134-b461-616532303135/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild6162-3638-4134-b537-383732316162/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+    ],
+    tags: ['sedan', 'luxury', 'mercedes'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '3982 cc',
+      maxSpeed: '250 km/h',
+      transmission: 'Automatic',
+      zeroToHundred: '4.8 seconds',
+      power: '503 HP',
+    },
+  },
+
+  {
+    id: 13,
+    title: 'Rolls-Royce',
+    subtitle: 'Ghost',
+    price: '4 490 AED',
+    brand: 'rr',
+    preview:
+      'https://thumb.tildacdn.com/tild3931-3935-4533-a133-326432636664/-/resize/320x/-/format/webp/rolls2kvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3863-3366-4334-b562-663666393561/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild3965-3636-4366-b063-383534353230/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+      'https://thumb.tildacdn.com/tild3137-3964-4632-a634-343535343264/-/resize/320x/-/format/webp/photo_2023-10-01_014.jpeg',
+    ],
+    tags: ['sedan', 'luxury', 'rolls'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '6592 cc',
+      maxSpeed: '250 km/h',
+      transmission: 'Robotic 8',
+      zeroToHundred: '5 seconds',
+      power: '563 HP',
+    },
+  },
+
+  {
+    id: 14,
+    title: 'Mercedes-Benz',
+    subtitle: 'S500 Brabus',
+    price: '2 050 AED',
+    brand: 'mers',
+    preview:
+      'https://thumb.tildacdn.com/tild6231-3536-4333-a434-336235653161/-/resize/320x/-/format/webp/s600kvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3933-3164-4537-b531-663131343134/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3037-6265-4364-b764-376362663665/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild6636-6364-4436-a664-666138383235/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+    ],
+    tags: ['sedan', 'luxury', 'mercedes'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '4663 cc',
+      maxSpeed: '250 km/h',
+      transmission: 'Automatic 7',
+      zeroToHundred: '4.8 seconds',
+      power: '455 HP',
+    },
+  },
+
+  {
+    id: 15,
+    title: 'Porsche',
+    subtitle: '911 Targa 4',
+    price: '1 700 AED',
+    brand: 'porshe',
+    preview:
+      'https://thumb.tildacdn.com/tild6639-6239-4366-b339-356431376365/-/resize/320x/-/format/webp/targakvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3236-6638-4634-b432-343965396333/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3037-3531-4535-b732-643939336166/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild6334-3562-4933-b330-313534633531/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+    ],
+    tags: ['cabrio', 'sportscar', 'porsche'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '2981 cc',
+      maxSpeed: '289 km/h',
+      transmission: 'PDK 8',
+      zeroToHundred: '4.4 seconds',
+      power: '385 HP',
+    },
+  },
+
+  {
+    id: 16,
+    title: 'Lamborghini',
+    subtitle: 'Urus',
+    price: '3 980 AED',
+    brand: 'lamborghini',
+    preview:
+      'https://thumb.tildacdn.com/tild3964-6566-4532-b462-386163363933/-/resize/320x/-/format/webp/uruskvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3132-6534-4839-a631-613433643738/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3534-3938-4963-b062-353738376666/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3363-3336-4035-b631-393862623036/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+    ],
+    tags: ['suv', 'sportscar', 'lambo'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '3996 cc',
+      maxSpeed: '305 km/h',
+      transmission: 'Automatic 8',
+      zeroToHundred: '3.6 seconds',
+      power: '666 HP',
+    },
+  },
+
+  {
+    id: 16,
+    title: 'BMW',
+    subtitle: 'X6 M Competition',
+    price: '1 400 AED',
+    brand: 'bmw',
+    preview:
+      'https://thumb.tildacdn.com/tild6230-6165-4533-b763-306564336235/-/resize/320x/-/format/webp/x5kvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3134-6537-4131-b261-636165346335/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3932-6135-4237-a662-393363306133/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3561-6332-4133-a466-356532356630/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+    ],
+    tags: ['suv', 'sportscar', 'bmw'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '4395 cc',
+      maxSpeed: '250 km/h',
+      transmission: 'Automatic 8',
+      zeroToHundred: '3.8 seconds',
+      power: '625 HP',
+    },
+  },
+
+  {
+    id: 17,
+    title: 'BMW',
+    subtitle: 'X7',
+    price: '1 300 AED',
+    brand: 'bmw',
+    preview:
+      'https://thumb.tildacdn.com/tild3131-3630-4631-b630-383465643534/-/resize/320x/-/format/webp/xm7kvadrat.jpg',
+    images: [
+      'https://thumb.tildacdn.com/tild3736-3531-4233-a431-646339316465/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3930-3463-4139-a266-363836376131/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+      'https://thumb.tildacdn.com/tild3134-3733-4161-b231-323663653937/-/resize/320x/-/format/webp/photo_2023-10-01_015.jpeg',
+    ],
+    tags: ['suv', 'luxury', 'bmw'],
+    specifications: {
+      engine: 'Petrol',
+      engineVolume: '3998 cc',
+      maxSpeed: '250 km/h',
+      transmission: 'Automatic 8',
+      zeroToHundred: '5.8 seconds',
+      power: '380 HP',
     },
   },
 ];

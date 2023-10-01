@@ -51,6 +51,7 @@ export const OrderKeyboardAvoidingView = styled.KeyboardAvoidingView.attrs(
 export const OrderItemInput = styled.TextInput`
   flex: 1;
   color: #fff;
+  height: 100%;
 `;
 
 export const OrderButton = styled(Button).attrs({
